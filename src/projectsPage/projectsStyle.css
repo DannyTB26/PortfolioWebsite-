@@ -1,0 +1,22 @@
+html {
+    background-color: black;
+}
+
+h1 {
+    color: cornsilk;
+    margin: 50px;
+}
+
+.flex-text {
+    color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-wrap {
+    color: cornsilk;
+}
