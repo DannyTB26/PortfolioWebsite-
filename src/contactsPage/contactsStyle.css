@@ -1,0 +1,14 @@
+html {
+  background-image: url("../images/contactsBackground.png");
+  background-size: cover;
+  background-color: darkolivegreen;
+}
+
+body {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.phoneNumber {
+
+}
