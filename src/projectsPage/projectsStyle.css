@@ -4,7 +4,6 @@ html {
 
 h1 {
     color: cornsilk;
-    margin: 50px;
 }
 
 .flex-text {
@@ -14,9 +13,22 @@ h1 {
 
 .flex-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .content-wrap {
     color: cornsilk;
+}
+
+section {
+    padding: 2.5%;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    width: 1000px;
 }
