@@ -20,3 +20,48 @@ h1 {
 .content-wrap {
     color: cornsilk;
 }
+
+section {
+    background-color: gray;
+    padding: 2.5%;
+    color: cornsilk;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-button {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 1%;
+    border-radius: 8px;
+}
+
+.cv-button:hover {
+    background-color: blue;
+    transform: translateY(-2px);
+}
+
+footer {
+    margin-top: auto;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 2.5%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-nav a:hover {
+    background-color: gray;
+}

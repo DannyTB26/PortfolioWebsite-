@@ -22,6 +22,7 @@ h1 {
 
 section {
     padding: 2.5%;
+    background-color: gray;
 }
 
 img {
@@ -31,4 +32,30 @@ img {
 
 p {
     width: 1000px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 2.5%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-nav a:hover {
+    background-color: gray;
 }
