@@ -1,16 +1,34 @@
-function websiteOpenFunction(event) {
-  event.target.innerHTML = "Contract";
-  event.target.addEventListener("click", websiteCloseFunction)
-  websiteText.hidden = true;
-}
-
-function websiteCloseFunction(event) {
-  event.target.innerHTML = "Expand";
-  event.target.addEventListener("click", websiteOpenFunction);
-  websiteText.hidden = true;
-}
-
 let websiteText = document.getElementsByClassName('website_hidden');
-websiteText.hidden = true;
 let websiteButton = document.getElementById('website_btn');
-websiteButton.addEventListener('click', websiteOpenFunction);
+
+let gameProjectText = document.getElementsByClassName('game_project_hidden');
+let gameProjectButton = document.getElementById('game_project_btn');
+
+let translatorText = document.getElementsByClassName('translator_hidden');
+let translatorButton = document.getElementById('translator_btn');
+
+let memoryText = document.getElementsByClassName('memory_hidden');
+let memoryButton = document.getElementById('memory_btn');
+
+let chatbotText = document.getElementsByClassName('chatbot_hidden');
+let chatbotButton = document.getElementById('chatbot_btn');
+
+function buttonSetUp(btn, txts) {
+  let expanded = false;
+
+  btn.addEventListener('click', () => {
+    expanded = !expanded;
+
+    btn.innerHTML = expanded ? 'Contract' : 'Expand';
+
+    for (let i = 0; i < txts.length; i++) {
+      txts[i].hidden = !expanded;
+    }
+  })
+}
+
+buttonSetUp(websiteButton, websiteText);
+buttonSetUp(gameProjectButton, gameProjectText);
+buttonSetUp(translatorButton, translatorText);
+buttonSetUp(memoryButton, memoryText);
+buttonSetUp(chatbotButton, chatbotText);

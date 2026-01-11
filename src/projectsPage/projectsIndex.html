@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="projectsStyle.css">
-  <script src="./projectsMain.js">
-    console.log("hello"); //TO-DO
+  <script type="text/javascript" src="projectsMain.js" defer>
   </script>
   <title>Projects and Achievements</title>
 </head>
@@ -21,10 +20,10 @@
         <p>This website is entirely coded and built by me. This is something I've always wanted to do and thanks to learning HTML, CSS and JavaScript on CodeCademy; I now am!</p>
         <p>This website contains multiple webpages, self-made styling and interactive features.</p>
 
+        <p hidden=true class="website_hidden">My plan for this website is to work on it continuously as I learn more skills. This is to serve as a further explanation of myself and my experience from my CV.</p>
+        <p hidden=true class="website_hidden">Presently, this website is contains HTML, CSS and JavaScript code, with images taken from the Internet under the Creative Commons Licence.</p>
+        
         <button id="website_btn">Expand</button>
-
-        <p class="website_hidden">My plan for this website is to work on it continuously as I learn more skills. This is to serve as a further explanation of myself and my experience from my CV.</p>
-        <p class="website_hidden">Presently, this website is contains HTML, CSS and JavaScript code, with images taken from the Internet under the Creative Commons Licence.</p>
       </div>
 
       <div class="about_img_container">
@@ -41,10 +40,15 @@
 
       <div class="content-wrap about_content">
         <h3>NEA Game Project</h3>
-        <p>This was a project as a part of my coursework for my A-level Computer Science degree.</p>
+        <p>This was a project as a part of my coursework for my A-level Computer Science qualification.</p>
         <p>I was tasked with creating some piece of software that involved OOP concepts, good script structure and had a proper development cycle.</p>
-        <p>I utilised the Agile Development Cycle to create a document outlining the progress made as well as building the game on a game engine called Godot.
-        The game itself involved multiple levels that required custom classes and objects, entirely created by me.</p>
+        <p>I utilised the Agile Development Cycle to create a document outlining the progress made as well as building the game on a game engine called Godot.</p>
+        <p>The game itself involved multiple levels that required custom classes and objects, entirely created by me.</p>
+
+        <p hidden=true class="game_project_hidden">I additionally utilised software called Aseprite to design and create custom sprites for the game.</p>
+        <p hidden=true class="game_project_hidden">The whole project took roughly a year to fully create, but in the end, I was satisifed and proud of the project I had made and the experience I gained from creating it.</p>
+
+        <button id="game_project_btn">Expand</button>
       </div>
 
       <div class="about_img_container">
@@ -58,12 +62,16 @@
   <section>
     <div class="flex-container">
       <div class="content-wrap about_content">
-        <h2>Collaborative Projects</h2>
         <h3>Translator for Hackathon</h3>
         <p>I attended a hackathon where the theme for the software was 'Human Connection'.</p>
         <p>My team decided to make an application that could translate between two given languages. This allowed for typing messages and for speaking aloud.</p>
         <p>While we didn't manage to create a fully developed application in the timeframe, we did manage to create a working prototype which is available on <a>GitHub</a> to view.</p>
         <p>Presenting this, our team won second place in the competition.</p>
+
+        <p hidden=true class="translator_hidden">My role in our team was, along with another team-mate, to code an algorithm that could listen for speech (or text) input, and recognise it accurately.</p>
+        <p hidden=true class="translator_hidden">To do this, we connected our application to a Google Translate API so that speech from different langauges could all be recognised and then hence translated accurately too.</p>
+
+        <button id="translator_btn">Expand</button>
       </div>
 
       <div class="about_img_container">
@@ -83,7 +91,13 @@
         <p>In this hackathon, I joined with the same team where this theme was 'Memories'.</p>
         <p>My team decided to make an application that could take any image as input, get the year the image was taken, and play the most popular song from that year (according to spotify).</p>
         <p>My part in this project was to connect the Spotipy API to our Python code. I did this by using the obtained year from the image, to search spotify for the URI of the most popular song of that year.</p>
-        <p>Then this URI was passed back to a player (which another team member made) to play the song on the User's spotify client.</p>
+        <p>Then this URI was passed back to another algorithm (which another team member made) to play the song on the User's spotify client.</p>
+
+        <p hidden=true class="memory_hidden">Although we didn't win runner-up nor winners of this hackathon, it was still a great experience to make.</p>
+        <p hidden=true class="memory_hidden">If I were to work on this in the future, I would work on tighening the date, so that people could find the most popular song of an exact day on spotify.</p>
+        <p hidden=true class="memory_hidden">I believe this would help emphasise the feeling of nostalgia as it would be more specific to the actual photo.</p>
+        
+        <button id="memory_btn">Expand</button>
       </div>
 
       <div>
@@ -97,11 +111,15 @@
   <section>
     <div class="flex-container">
       <div class="content-wrap around_content">
-        <h2>Work Projects</h2>
         <h3>AI Chatbot Interface for Three with Bluebeck</h3>
         <p>As a part of some Work Experience I did with the software company <a>Bluebeck</a>, I was tasked by the boss to create a Chatbot-like interface for an AI they have been developing for the phone company Three.</p>
         <p>I started by designing a interface on paper to get an idea of how it would look like. Then I used Android Studio (coding in Kotlin and XML) to create the interface.</p>
         <p>This was highly praised by the boss as excellent work.</p>
+
+        <p hidden=true class="chatbot_hidden">Before starting this project, I briefly learned how to use Andriod Studio, Kotlin and XML in a small, online tutorial that some of the employees showed me.</p>
+        <p hidden=true class="chatbot_hidden">This taught me the basics of the three, and then I worked accordingly to eventually build up the interface, tested it on a test phone, and finally showed the CEO at the end of my work experience.</p>
+
+        <button id="chatbot_btn">Expand</button>
       </div>
 
       <div class="about_img_container">
