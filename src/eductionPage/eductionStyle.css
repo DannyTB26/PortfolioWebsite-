@@ -1,6 +1,5 @@
 html {
-    background-image: url(../images/educationBackground.jpg);
-    background-color: darkblue;
+    background-color: #0509F2;
     background-size: cover;
 }
 
@@ -19,7 +18,7 @@ img {
 }
 
 section {
-    background-color: darkblue;
+    background-color: #0B05AD;
     color: white;
     padding: 2.5%;
 }

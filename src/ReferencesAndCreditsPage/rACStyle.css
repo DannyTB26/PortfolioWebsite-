@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: #888C88;
     color: white;
 }
 
@@ -7,6 +7,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+section {
+  background-color: #5E615E;
+  padding: 1%;
 }
 
 footer {

@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: #45C421;
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
 }
 
 section {
-    background-color: gray;
+    background-color: #3AA61C;
     padding: 2.5%;
     color: cornsilk;
 }
@@ -35,7 +35,7 @@ body {
 
 .cv-button {
     display: inline-block;
-    background-color: darkblue;
+    background-color: #287314;
     color: white;
     padding: 1%;
     border-radius: 8px;
