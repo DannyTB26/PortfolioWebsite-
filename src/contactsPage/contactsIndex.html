@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="contactsStyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <title>Contacts and Links</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts — Daniel Baylan</title>
+  <meta name="description" content="Get in touch with Daniel Baylan via email, LinkedIn or GitHub.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+  <link rel="stylesheet" href="../../styles.css">
 </head>
-
 <body>
-<h1>Contacts and Links</h1>
-<div id="Contacts and Links">
-  <ul>
-    <li><p id="email">
-      <i class="fa-solid fa-envelope"></i><b> E-mail</b>:
-      DanielJBaylan@gmail.com</p></li>
-    <li><p id="phoneNumber">
-      <i class="fa-solid fa-phone"></i><b> Phone Number</b>:
-      +44 7703144054</p></li>
 
-    <li><p id="linkedIn">
-      <i class="fa-brands fa-linkedin"></i><b> LinkedIn</b>:
-      <a href="https://www.linkedin.com/in/daniel-baylan-17943032a" target="_blank">
-      Daniel Baylan</a>
-    </p></li>
+  <!-- ==================== Header / Nav ==================== -->
+  <header class="site-header">
+    <div class="prompt">daniel@portfolio <span>~</span> $</div>
 
-    <li><p id="gitHub">
-      <i class="fa-brands fa-github"></i><b> GitHub</b>:
-      <a href="https://github.com/DannyTB26" target="_blank">
-      DannyTB26</a></p></li>
-  </ul>
-</div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">menu</button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="../../index.html">./home</a>
+      <a href="../projectsPage/projectsIndex.html">./projects</a>
+      <a href="../eductionPage/eductionIndex.html">./education</a>
+      <a href="contactsIndex.html" class="active">./contacts</a>
+      <a href="../ReferencesAndCreditsPage/rACIndex.html">./references</a>
+    </nav>
+  </header>
+
+  <!-- ==================== Page header ==================== -->
+  <section class="page-header">
+    <p class="eyebrow">// contacts</p>
+    <h1>Get in touch</h1>
+    <p class="subtitle">Feel free to reach out through any of the platforms below.</p>
+  </section>
+
+  <!-- ==================== Contacts list ==================== -->
+  <div class="contacts-list">
+
+    <a href="mailto:you@example.com" class="contact-item">
+      <div class="contact-icon"><i class="ti ti-mail"></i></div>
+      <div class="contact-info">
+        <p class="contact-label">email</p>
+        <p class="contact-value">you@example.com</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/dannytb26" target="_blank" rel="noopener" class="contact-item">
+      <div class="contact-icon"><i class="ti ti-brand-github"></i></div>
+      <div class="contact-info">
+        <p class="contact-label">github</p>
+        <p class="contact-value">github.com/dannytb26</p>
+      </div>
+    </a>
+
+    <a href="#" target="_blank" rel="noopener" class="contact-item">
+      <div class="contact-icon"><i class="ti ti-brand-linkedin"></i></div>
+      <div class="contact-info">
+        <p class="contact-label">linkedin</p>
+        <p class="contact-value">linkedin.com/in/your-profile</p>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <span class="copyright">© 2026 Daniel Baylan</span>
+    <div class="social">
+      <a href="https://github.com/dannytb26" aria-label="GitHub" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
+      <a href="mailto:you@example.com" aria-label="Email"><i class="ti ti-mail"></i></a>
+      <a href="#top" aria-label="Back to top" class="back-to-top"><i class="ti ti-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
 </body>
-
-<footer class="footer">
-  <nav class="footer-nav">
-    <a href="../../index.html">Home</a>
-    <a href="../eductionPage/eductionIndex.html">Education</a>
-    <a href="../projectsPage/projectsIndex.html">Projects</a>
-    <a href="../ReferencesAndCreditsPage/rACIndex.html">References and Credits</a>
-  </nav>
-</footer>
 </html>

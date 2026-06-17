@@ -1,33 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="rACStyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <title>References and Credits</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References &amp; Credits — Daniel Baylan</title>
+  <meta name="description" content="References for Daniel Baylan and credits for resources used to build this site.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+  <link rel="stylesheet" href="../../styles.css">
+</head>
 <body>
-<h1>References and Credits</h1>
-<section>
-  <div id="References and Credits">
-    <h2>Image Credits</h2>
-      <p>Images used for this website are from:
-          <ul>
-              <li><a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons:</a> under the following <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons liscence</a></p></li>
-              <li><a href="https://www.allhallows.org.uk">All Hallows Catholic College</a></li>
-              <li><a href="https://www.birmingham.ac.uk">University of Birmingham</a></li>
-          </ul>
+
+  <!-- ==================== Header / Nav ==================== -->
+  <header class="site-header">
+    <div class="prompt">daniel@portfolio <span>~</span> $</div>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">menu</button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="../../index.html">./home</a>
+      <a href="../projectsPage/projectsIndex.html">./projects</a>
+      <a href="../eductionPage/eductionIndex.html">./education</a>
+      <a href="../contactsPage/contactsIndex.html">./contacts</a>
+      <a href="rACIndex.html" class="active">./references</a>
+    </nav>
+  </header>
+
+  <!-- ==================== Page header ==================== -->
+  <section class="page-header">
+    <p class="eyebrow">// references</p>
+    <h1>References</h1>
+    <p class="subtitle">Click a reference for the full overview.</p>
+  </section>
+
+  <!-- ==================== References list ==================== -->
+  <div class="education-list" id="references-list">
+
+    <article class="education-card">
+      <div class="stage-icon"><i class="ti ti-user-circle"></i></div>
+      <div class="stage-info">
+        <p class="card-title">Reference Name One</p>
+        <p class="stage-meta">Job Title · Company Name</p>
+      </div>
+      <i class="ti ti-chevron-right stage-arrow"></i>
+      <template class="education-detail">
+        <p class="reference-quote">Placeholder reference text for Reference Name One. This is where their full written reference or testimonial would go — describing how they know you, the work you did together, and their thoughts on your skills and character.</p>
+        <p class="card-desc">Contact: reference1@example.com</p>
+      </template>
+    </article>
+
+    <article class="education-card">
+      <div class="stage-icon"><i class="ti ti-user-circle"></i></div>
+      <div class="stage-info">
+        <p class="card-title">Reference Name Two</p>
+        <p class="stage-meta">Job Title · Company Name</p>
+      </div>
+      <i class="ti ti-chevron-right stage-arrow"></i>
+      <template class="education-detail">
+        <p class="reference-quote">Placeholder reference text for Reference Name Two. This is where their full written reference or testimonial would go — describing how they know you, the work you did together, and their thoughts on your skills and character.</p>
+        <p class="card-desc">Contact: reference2@example.com</p>
+      </template>
+    </article>
 
   </div>
-</section>
-</body>
 
-<footer class="footer">
-  <nav class="footer-nav">
-    <a href="../../index.html">Home</a>
-    <a href="../contactsPage/contactsIndex.html">Contacts</a>
-    <a href="../eductionPage/eductionIndex.html">Education</a>
-    <a href="../projectsPage/projectsIndex.html">Projects</a>
-  </nav>
-</footer>
+  <!-- ==================== Detail modal ==================== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close"><i class="ti ti-x"></i></button>
+      <div class="content">
+        <p class="card-title" id="modal-title"></p>
+        <p class="stage-meta" id="modal-meta" style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin: -4px 0 16px;"></p>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== Credits ==================== -->
+  <section class="credits-section">
+    <p class="eyebrow">// credits</p>
+    <h2 style="text-align:center; font-size:22px; font-weight:500; margin:0 0 24px;">Credits</h2>
+    <ul class="credits-list">
+      <li>Icons by <a href="https://tabler.io/icons" target="_blank" rel="noopener">Tabler Icons</a></li>
+      <li>Fonts: <a href="https://fonts.google.com/specimen/Inter" target="_blank" rel="noopener">Inter</a> and <a href="https://fonts.google.com/specimen/IBM+Plex+Mono" target="_blank" rel="noopener">IBM Plex Mono</a> via Google Fonts</li>
+      <li>Built and hosted with <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></li>
+      <li>Built with the help of <a href="https://www.anthropic.com/claude" target="_blank" rel="noopener">Claude (Anthropic)</a></li>
+    </ul>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <span class="copyright">© 2026 Daniel Baylan</span>
+    <div class="social">
+      <a href="https://github.com/dannytb26" aria-label="GitHub" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
+      <a href="mailto:you@example.com" aria-label="Email"><i class="ti ti-mail"></i></a>
+      <a href="#top" aria-label="Back to top" class="back-to-top"><i class="ti ti-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Reference detail modal
+    const overlay = document.getElementById('modal-overlay');
+    const modalTitle = document.getElementById('modal-title');
+    const modalMeta = document.getElementById('modal-meta');
+    const modalBody = document.getElementById('modal-body');
+    const modalClose = document.getElementById('modal-close');
+
+    const cards = document.querySelectorAll('.education-card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const title = card.querySelector('.card-title').textContent;
+        const meta = card.querySelector('.stage-meta').textContent;
+        const detail = card.querySelector('.education-detail');
+
+        modalTitle.textContent = title;
+        modalMeta.textContent = meta;
+        modalBody.innerHTML = '';
+        modalBody.appendChild(detail.content.cloneNode(true));
+
+        overlay.classList.add('open');
+      });
+    });
+
+    function closeModal() {
+      overlay.classList.remove('open');
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+
+</body>
 </html>

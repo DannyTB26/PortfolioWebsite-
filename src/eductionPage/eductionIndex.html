@@ -1,98 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="eductionStyle.css">
-  <title>Education</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education — Daniel Baylan</title>
+  <meta name="description" content="Daniel Baylan's education history, including degrees, courses and grades.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
+  <link rel="stylesheet" href="../../styles.css">
 </head>
-
 <body>
-<h1>Education</h1>
-<section id="GCSEs">
 
-  <div class="flex-container">
-    <div class="content-wrap about_content">
-      <h2>GCSEs (2020-2022)</h2>
-      <h3>All Hallow's Catholic College</h3>
-      <ul>
-        <li>Biology: 6</li>
-        <li>Chemistry: 7</li>
-        <li>Catering and Hospitality: Level 2 Distinction</li>
-        <li>Computer Science: 8</li>
-        <li>English Language: 9</li>
-        <li>English Literature: 8</li>
-        <li>History: 8</li>
-        <li>Maths: 8</li>
-        <li>Physics: 7</li>
-        <li>Religious Education: 8</li>
-      </ul>
+  <!-- ==================== Header / Nav ==================== -->
+  <header class="site-header">
+    <div class="prompt">daniel@portfolio <span>~</span> $</div>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">menu</button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="../../index.html">./home</a>
+      <a href="../projectsPage/projectsIndex.html">./projects</a>
+      <a href="eductionIndex.html" class="active">./education</a>
+      <a href="../contactsPage/contactsIndex.html">./contacts</a>
+      <a href="../ReferencesAndCreditsPage/rACIndex.html">./references</a>
+    </nav>
+  </header>
+
+  <!-- ==================== Page header ==================== -->
+  <section class="page-header">
+    <p class="eyebrow">// education</p>
+    <h1>My academic journey</h1>
+    <p class="subtitle">Click a stage below for more detail, including grades and modules.</p>
+  </section>
+
+  <!-- ==================== Education list ==================== -->
+  <div class="education-list" id="education-list">
+
+    <article class="education-card">
+      <div class="stage-icon"><i class="ti ti-school"></i></div>
+      <div class="stage-info">
+        <p class="card-title">MSc Computer Science</p>
+        <p class="stage-meta">University of Birmingham · 2025 – 2026</p>
+      </div>
+      <i class="ti ti-chevron-right stage-arrow"></i>
+      <template class="education-detail">
+        <p class="card-desc">Placeholder overview of the Masters programme — what it covers, any specialisms or focus areas, and a brief note on your dissertation or major project topic.</p>
+        <table class="grades-table">
+          <thead>
+            <tr><th>Module</th><th style="text-align:right;">Grade</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Module Name One</td><td class="grade">—</td></tr>
+            <tr><td>Module Name Two</td><td class="grade">—</td></tr>
+            <tr><td>Module Name Three</td><td class="grade">—</td></tr>
+            <tr><td>Dissertation / Major Project</td><td class="grade">—</td></tr>
+          </tbody>
+        </table>
+      </template>
+    </article>
+
+    <article class="education-card">
+      <div class="stage-icon"><i class="ti ti-certificate"></i></div>
+      <div class="stage-info">
+        <p class="card-title">BSc (Hons) Degree Title</p>
+        <p class="stage-meta">University Name · 20XX – 20XX</p>
+      </div>
+      <i class="ti ti-chevron-right stage-arrow"></i>
+      <template class="education-detail">
+        <p class="card-desc">Placeholder overview of your undergraduate degree — subject focus, overall classification, and a sentence on a standout module or project.</p>
+        <table class="grades-table">
+          <thead>
+            <tr><th>Module</th><th style="text-align:right;">Grade</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Module Name One</td><td class="grade">—</td></tr>
+            <tr><td>Module Name Two</td><td class="grade">—</td></tr>
+            <tr><td>Module Name Three</td><td class="grade">—</td></tr>
+            <tr><td>Final Year Project</td><td class="grade">—</td></tr>
+          </tbody>
+        </table>
+        <p class="card-desc" style="margin-top:-8px;">Overall classification: <strong style="color: var(--accent);">—</strong></p>
+      </template>
+    </article>
+
+    <article class="education-card">
+      <div class="stage-icon"><i class="ti ti-book"></i></div>
+      <div class="stage-info">
+        <p class="card-title">A-Levels</p>
+        <p class="stage-meta">School/College Name · 20XX – 20XX</p>
+      </div>
+      <i class="ti ti-chevron-right stage-arrow"></i>
+      <template class="education-detail">
+        <p class="card-desc">Placeholder note on your A-Level subjects and any relevant context (e.g. why you chose them, anything notable you worked on).</p>
+        <table class="grades-table">
+          <thead>
+            <tr><th>Subject</th><th style="text-align:right;">Grade</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Subject One</td><td class="grade">—</td></tr>
+            <tr><td>Subject Two</td><td class="grade">—</td></tr>
+            <tr><td>Subject Three</td><td class="grade">—</td></tr>
+          </tbody>
+        </table>
+      </template>
+    </article>
+
+    <article class="education-card">
+      <div class="stage-icon"><i class="ti ti-pencil"></i></div>
+      <div class="stage-info">
+        <p class="card-title">GCSEs</p>
+        <p class="stage-meta">School Name · 20XX</p>
+      </div>
+      <i class="ti ti-chevron-right stage-arrow"></i>
+      <template class="education-detail">
+        <p class="card-desc">Placeholder summary — e.g. number of GCSEs achieved and overall results, with a short table for standout subjects (Maths, English, Sciences, Computer Science etc.) if you'd like to highlight them.</p>
+        <table class="grades-table">
+          <thead>
+            <tr><th>Subject</th><th style="text-align:right;">Grade</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Mathematics</td><td class="grade">—</td></tr>
+            <tr><td>English</td><td class="grade">—</td></tr>
+            <tr><td>Computer Science</td><td class="grade">—</td></tr>
+          </tbody>
+        </table>
+      </template>
+    </article>
+
+  </div>
+
+  <!-- ==================== Certifications / courses ==================== -->
+  <section class="certs-section">
+    <p class="eyebrow">// courses &amp; certifications</p>
+    <div class="certs-grid">
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="ti ti-chart-dots"></i></div>
+        <div class="cert-info">
+          <p class="cert-title">Data Science Course Name</p>
+          <p class="cert-meta">Platform Name · 20XX</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="ti ti-layout"></i></div>
+        <div class="cert-info">
+          <p class="cert-title">Front End Engineering Course Name</p>
+          <p class="cert-meta">Platform Name · 20XX</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="ti ti-brand-python"></i></div>
+        <div class="cert-info">
+          <p class="cert-title">Python Programming Course Name</p>
+          <p class="cert-meta">Platform Name · 20XX</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="ti ti-brand-javascript"></i></div>
+        <div class="cert-info">
+          <p class="cert-title">JavaScript Course Name</p>
+          <p class="cert-meta">Platform Name · 20XX</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="ti ti-shield-lock"></i></div>
+        <div class="cert-info">
+          <p class="cert-title">Cybersecurity Fundamentals Course Name</p>
+          <p class="cert-meta">Platform Name · 20XX</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="ti ti-database"></i></div>
+        <div class="cert-info">
+          <p class="cert-title">SQL / Databases Course Name</p>
+          <p class="cert-meta">Platform Name · 20XX</p>
+        </div>
+      </div>
+
     </div>
-
-    <div class="about_img_container">
-      <img src="../images/AllHallows.jpg"/>
+  </section>
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close"><i class="ti ti-x"></i></button>
+      <div class="content">
+        <p class="card-title" id="modal-title"></p>
+        <p class="stage-meta" id="modal-meta" style="font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin: -4px 0 16px;"></p>
+        <div id="modal-body"></div>
+      </div>
     </div>
   </div>
-</section>
 
-<br>
-
-<section id="A-levels">
-  <div class="flex-container">
-
-    <div class="content-wrap about_content">
-      <h2>A-levels (2022-2024)</h2>
-      <h3>All Hallow's Catholic College</h3>
-      <ul>
-        <li>Computer Science: A</li>
-        <li>Maths: A*</li>
-        <li>Physics: A</li>
-      </ul>
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <span class="copyright">© 2026 Daniel Baylan</span>
+    <div class="social">
+      <a href="https://github.com/dannytb26" aria-label="GitHub" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
+      <a href="mailto:you@example.com" aria-label="Email"><i class="ti ti-mail"></i></a>
+      <a href="#top" aria-label="Back to top" class="back-to-top"><i class="ti ti-arrow-up"></i></a>
     </div>
+  </footer>
 
-    <div class="about_img_container">
-      <img src="../images/AllHallows.jpg"/>
-    </div>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
 
-  </div>
-</section>
+    // Education detail modal
+    const overlay = document.getElementById('modal-overlay');
+    const modalTitle = document.getElementById('modal-title');
+    const modalMeta = document.getElementById('modal-meta');
+    const modalBody = document.getElementById('modal-body');
+    const modalClose = document.getElementById('modal-close');
 
-<br>
+    const cards = document.querySelectorAll('.education-card');
 
-<section id="University">
-  <div class="flex-container">
-    <div class="content-wrap about_content">
-      <h2>University (2024-ongoing)</h2>
-      <h3>University of Birmingham</h3>
-      <h4>Year 1</h4>
-      <ul>
-        <li>Artificial Intelligence 1: Class First</li>
-        <li>Computer Systems: Class First</li>
-        <li>Data Structures and Algorithms: Class 2.1</li>
-        <li>Maths and Logic: Class First</li>
-        <li>Object Oriented Programming: Class First</li>
-        <li>Theory of Computation: Class First</li>
-      </ul>
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const title = card.querySelector('.card-title').textContent;
+        const meta = card.querySelector('.stage-meta').textContent;
+        const detail = card.querySelector('.education-detail');
 
-      <h4>Year 2 (ongoing)</h4>
-      <ul>
-        <li>Artificial Intelligence 2</li>
-        <li>Databases and Web Programming</li>
-        <li>Functional Programming</li>
-      </ul>
-    </div>
+        modalTitle.textContent = title;
+        modalMeta.textContent = meta;
+        modalBody.innerHTML = '';
+        modalBody.appendChild(detail.content.cloneNode(true));
 
-    <div class="about_img_container">
-      <img src="../images/UoB.jpg"/>
-    </div>
-  </div>
-</section>
+        overlay.classList.add('open');
+      });
+    });
+
+    function closeModal() {
+      overlay.classList.remove('open');
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+
 </body>
-
-<footer class="footer">
-  <nav class="footer-nav">
-    <a href="../../index.html">Home</a>
-    <a href="../contactsPage/contactsIndex.html">Contacts</a>
-    <a href="../projectsPage/projectsIndex.html">Projects</a>
-    <a href="../ReferencesAndCreditsPage/rACIndex.html">References and Credits</a>
-  </nav>
-</footer>
 </html>

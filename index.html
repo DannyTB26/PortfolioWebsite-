@@ -1,47 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Daniel Baylan's Portfolio</title>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Baylan — Portfolio</title>
+  <meta name="description" content="Portfolio of Daniel Baylan, MSc Computer Science student exploring full stack software engineering, AI engineering and cybersecurity.">
 
-    <body>
-        <h1>Personal Overview</h1>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 
-        <section>
-        <div class="flex-container">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-          <div class="content-wrap about_content">
-              <h2>Introduction about Me</h2>
-              <p>My name is Daniel Baylan. I am a student attending the University of Birmingham
-                and am doing my Second Year in a Masters in Computer Science/Software Engineering course.</p>
-              <p>As well as the University course, I have also taken several online courses on Data Science, Front End Engineering and in various programming languages
-                (These course achievements are outlined in the <a href="src/projectsPage/projectsIndex.html">Projects</a> page).</p>
-              <p>I aspire to become a Full Stack Software Engineer, capable of creating entire applications either on my own
-                or as part of a greater team.</p>
-          </div>
+  <!-- ==================== Header / Nav ==================== -->
+  <header class="site-header">
+    <div class="prompt">daniel@portfolio <span>~</span> $</div>
 
-          <div class="about_img_container">
-            <img src="src/images/DanielBaylan.jpg"/>
-          </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">menu</button>
 
-        </div>
-        </section>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html" class="active">./home</a>
+      <a href="src/projectsPage/projectsIndex.html">./projects</a>
+      <a href="src/eductionPage/eductionIndex.html">./education</a>
+      <a href="src/contactsPage/contactsIndex.html">./contacts</a>
+      <a href="src/ReferencesAndCreditsPage/rACIndex.html">./references</a>
+    </nav>
+  </header>
 
-        <br>
+  <!-- ==================== Hero ==================== -->
+  <section class="hero">
+    <p class="eyebrow">// hello world</p>
+    <h1>Daniel Baylan</h1>
+    <p class="subtitle">Second-year MSc Computer Science student, University of Birmingham</p>
+    <a href="src/assests/documents/Curriculum_Vitae.pdf" class="btn" download>
+      <i class="ti ti-download"></i> Download CV
+    </a>
+  </section>
 
-        <section>
-          <h2>My CV</h2>
-            <p>For a more brief overview of myself, here is my CV that outlines what projects I've done, my education and skills: <a href="src/assests/documents/Curriculum_Vitae.pdf" class="cv-button" download>My CV</a></p>
-        </section>
-    </body>
+  <!-- ==================== About ==================== -->
+  <section class="about">
+    <div class="about-photo">
+      <img src="src/images/DanielBaylan.jpg" alt="Photo of Daniel Baylan">
+    </div>
+    <div class="about-content">
+      <p class="eyebrow">// about me</p>
+      <p>
+        I'm a Computer Science Masters student with a passion for building things end to end.
+        Alongside my degree, I've completed online courses in data science, front end engineering,
+        and several programming languages.
+      </p>
+      <p>
+        I'm currently exploring a few different directions for where I want my career to go:
+      </p>
+      <div class="tags">
+        <span class="tag accent">#fullstack</span>
+        <span class="tag accent-2">#ai-engineering</span>
+        <span class="tag accent">#cybersecurity</span>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <nav class="footer-nav">
-        <a href="src/contactsPage/contactsIndex.html">Contacts</a>
-        <a href="src/eductionPage/eductionIndex.html">Education</a>
-        <a href="src/projectsPage/projectsIndex.html">Projects</a>
-        <a href="src/ReferencesAndCreditsPage/rACIndex.html">References and Credits</a>
-      </nav>
-    </footer>
+  <!-- ==================== Explore ==================== -->
+  <section class="explore">
+    <p class="eyebrow">// explore</p>
+    <div class="card-grid">
+      <a href="src/projectsPage/projectsIndex.html" class="card">
+        <i class="ti ti-code" style="color: var(--accent);"></i>
+        <p class="card-title">Projects</p>
+        <p class="card-desc">A look at what I've built</p>
+      </a>
+      <a href="src/eductionPage/eductionIndex.html" class="card">
+        <i class="ti ti-school" style="color: var(--accent-2);"></i>
+        <p class="card-title">Education</p>
+        <p class="card-desc">Degrees, courses and certifications</p>
+      </a>
+      <a href="src/contactsPage/contactsIndex.html" class="card">
+        <i class="ti ti-mail" style="color: var(--accent);"></i>
+        <p class="card-title">Contacts</p>
+        <p class="card-desc">Get in touch with me</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <span class="copyright">© 2026 Daniel Baylan</span>
+    <div class="social">
+      <a href="https://github.com/dannytb26" aria-label="GitHub" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i></a>
+      <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
+      <a href="mailto:you@example.com" aria-label="Email"><i class="ti ti-mail"></i></a>
+      <a href="#top" aria-label="Back to top" class="back-to-top"><i class="ti ti-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
 </html>
