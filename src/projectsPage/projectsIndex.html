@@ -39,6 +39,7 @@
   <!-- ==================== Filters ==================== -->
   <div class="filters" id="filters">
     <button class="filter-btn active" data-filter="all">all</button>
+    <button class="filter-btn" data-filter="professional">#professional</button>
     <button class="filter-btn" data-filter="fullstack">#fullstack</button>
     <button class="filter-btn" data-filter="hackathon">#hackathon</button>
     <button class="filter-btn" data-filter="cybersecurity">#cybersecurity</button>
@@ -47,8 +48,61 @@
   <!-- ==================== Projects grid ==================== -->
   <div class="projects-grid" id="projects-grid">
 
+    <article class="project-card" data-tags="professional fullstack">
+      <div class="thumb"><img src="../images/documentCollectionLogo.svg" alt="Go Automation Document Collection System"></div>
+      <div class="content">
+        <p class="card-title">Document Collection System</p>
+        <p class="card-desc">An AI-powered, multi-tenant SaaS platform that lets firms collect, verify and reuse documents from their customers, built end to end at Go Automation.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">Next.js</span>
+          <span class="tag accent-2">TypeScript</span>
+          <span class="tag accent-2">Supabase</span>
+        </div>
+      </div>
+      <template class="project-detail">
+        <p class="card-desc">As Head Developer at Go Automation, I'm architecting and building this document-collection platform on my own: a genuinely new take on a problem existing tools don't solve well. Firms create cases, and their customers upload required documents through secure, no-login public links; the system works out exactly what each case needs, verifies what comes in, and can automatically reuse a document a customer already supplied on a previous case instead of re-chasing it.</p>
+        <p class="card-desc">It's a multi-tenant application with strict per-firm data isolation (Postgres row-level security), configurable custom fields, AI-driven extraction to check document freshness, and a consent-gated cross-case reuse engine. Every release goes through an adversarial code-review gate before it ships to production.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">Next.js</span>
+          <span class="tag accent-2">React</span>
+          <span class="tag accent-2">TypeScript</span>
+          <span class="tag accent-2">Supabase / Postgres</span>
+          <span class="tag accent-2">RLS</span>
+          <span class="tag accent-2">AI</span>
+        </div>
+      </template>
+    </article>
+
+    <article class="project-card" data-tags="professional fullstack">
+      <div class="thumb"><img src="../images/mortgageBridgeLogo.svg" alt="Mortgage Bridge CRM"></div>
+      <div class="content">
+        <p class="card-title">Mortgage Bridge CRM</p>
+        <p class="card-desc">A mobile-first PWA that gives mortgage brokers a fast, secure workflow over their existing CRM. I built the first version and now lead its ongoing development.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">React</span>
+          <span class="tag accent-2">Node.js</span>
+          <span class="tag accent-2">PostgreSQL</span>
+        </div>
+      </div>
+      <template class="project-detail">
+        <p class="card-desc">Mortgage Bridge CRM is a broker lead-distribution and management app delivered by Go Automation. It's a custom front end and orchestration layer over GoHighLevel: brokers see a live pool of available leads, "take" one to have it assigned to them, then message the client, log tasks, book appointments and collaborate with the team, all without ever logging into the underlying CRM.</p>
+        <p class="card-desc">I built the initial version myself: an installable PWA with a lightweight Node backend, PostgreSQL storage, scrypt-hashed session auth, role-based admin/broker access and web-push notifications. Since onboarding a second developer, I now manage the project and its continued delivery, with a focus on performance and GDPR-conscious handling of applicant data.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">React</span>
+          <span class="tag accent-2">TypeScript</span>
+          <span class="tag accent-2">Node.js</span>
+          <span class="tag accent-2">PostgreSQL</span>
+          <span class="tag accent-2">PWA</span>
+        </div>
+      </template>
+    </article>
+
     <article class="project-card" data-tags="fullstack">
-      <div class="thumb"><img src="../images/websiteLogo.png"></div>
+      <div class="thumb"><img src="../images/websiteLogo.svg" alt="Portfolio website"></div>
       <div class="content">
         <p class="card-title">This website!</p>
         <p class="card-desc">A responsive, accessible portfolio website built with HTML, CSS, and JavaScript.</p>
@@ -75,7 +129,7 @@
     </article>
 
     <article class="project-card" data-tags="fullstack">
-      <div class="thumb"><img src="../images/NeighbourHoodReportLogo.png"></div>
+      <div class="thumb"><img src="../images/NeighbourHoodReportLogo.svg" alt="Neighbourhood Report System"></div>
       <div class="content">
         <p class="card-title">Neighbourhood Report System</p>
         <p class="card-desc">A fullstack application used for report hazards, informing local councils and providing updates on fixes.</p>
@@ -99,7 +153,7 @@
     </article>
 
     <article class="project-card" data-tags="hackathon">
-      <div class="thumb"><img src="../images/translator.png"></div>
+      <div class="thumb"><img src="../images/translator.svg" alt="Translator application"></div>
       <div class="content">
         <p class="card-title">Translator</p>
         <p class="card-desc">A somewhat simplisitic translator application to translate between languages.</p>
@@ -121,7 +175,7 @@
     </article>
 
     <article class="project-card" data-tags="hackathon">
-      <div class="thumb"><img src="../images/spotify.png"></div>
+      <div class="thumb"><img src="../images/spotify.svg" alt="Nostalgic music player"></div>
       <div class="content">
         <p class="card-title">Nostalgic Music Player</p>
         <p class="card-desc">An app used to play the most played song from a given date. This serves to give nostaglia from old and significant dates for people.</p>
@@ -144,7 +198,7 @@
     </article>
 
     <article class="project-card" data-tags="fullstack">
-      <div class="thumb"><img src="../images/godot.png"></div>
+      <div class="thumb"><img src="../images/godot.svg" alt="Thief simulator game"></div>
       <div class="content">
         <p class="card-title">Thief Simulator Game</p>
         <p class="card-desc">A game I made in Godot where you play as a thief trying to steal items from various locations.</p>

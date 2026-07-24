@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Neighbourhood Report System">
+  <rect width="640" height="360" fill="#14181F"/>
+  <g stroke="#2A3038" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="90" x2="640" y2="90"/>
+    <line x1="0" y1="180" x2="640" y2="180"/>
+    <line x1="0" y1="270" x2="640" y2="270"/>
+  </g>
+  <text x="40" y="64" font-family="'IBM Plex Mono', monospace" font-size="20" fill="#4FA39A">neighbourhood <tspan fill="#5A6472">~</tspan> <tspan fill="#E8A33D">$</tspan> <tspan fill="#C9D1D9">report --hazard</tspan></text>
+  <!-- faint street grid -->
+  <g stroke="#232B36" stroke-width="4" opacity="0.8">
+    <line x1="120" y1="120" x2="520" y2="120"/>
+    <line x1="120" y1="200" x2="520" y2="200"/>
+    <line x1="120" y1="280" x2="520" y2="280"/>
+    <line x1="210" y1="110" x2="210" y2="300"/>
+    <line x1="320" y1="110" x2="320" y2="300"/>
+    <line x1="430" y1="110" x2="430" y2="300"/>
+  </g>
+  <!-- map pin -->
+  <g transform="translate(320,205)">
+    <path d="M0 -70 C40 -70 62 -40 62 -8 C62 34 0 92 0 92 C0 92 -62 34 -62 -8 C-62 -40 -40 -70 0 -70 Z" fill="#4FA39A"/>
+    <circle cx="0" cy="-6" r="30" fill="#14181F"/>
+    <!-- alert -->
+    <rect x="-5" y="-28" width="10" height="26" rx="5" fill="#E8A33D"/>
+    <circle cx="0" cy="10" r="5.5" fill="#E8A33D"/>
+  </g>
+  <text x="600" y="332" text-anchor="end" font-family="'IBM Plex Mono', monospace" font-size="16" fill="#5A6472">TypeScript · React</text>
+</svg>

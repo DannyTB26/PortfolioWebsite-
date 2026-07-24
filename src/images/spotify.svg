@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Nostalgic music player">
+  <rect width="640" height="360" fill="#14181F"/>
+  <g stroke="#2A3038" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="90" x2="640" y2="90"/>
+    <line x1="0" y1="180" x2="640" y2="180"/>
+    <line x1="0" y1="270" x2="640" y2="270"/>
+  </g>
+  <text x="40" y="64" font-family="'IBM Plex Mono', monospace" font-size="20" fill="#4FA39A">nostalgia <tspan fill="#5A6472">~</tspan> <tspan fill="#E8A33D">$</tspan> <tspan fill="#C9D1D9">play --top-song</tspan></text>
+  <!-- vinyl record -->
+  <g transform="translate(250,200)">
+    <circle cx="0" cy="0" r="85" fill="#1B2029" stroke="#2A3038" stroke-width="2"/>
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#2A3038" stroke-width="2"/>
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#2A3038" stroke-width="2"/>
+    <circle cx="0" cy="0" r="34" fill="#4FA39A"/>
+    <circle cx="0" cy="0" r="7" fill="#14181F"/>
+  </g>
+  <!-- waveform -->
+  <g transform="translate(360,200)" stroke="#E8A33D" stroke-width="7" stroke-linecap="round">
+    <line x1="0" y1="-18" x2="0" y2="18"/>
+    <line x1="22" y1="-40" x2="22" y2="40"/>
+    <line x1="44" y1="-26" x2="44" y2="26"/>
+    <line x1="66" y1="-52" x2="66" y2="52"/>
+    <line x1="88" y1="-30" x2="88" y2="30"/>
+    <line x1="110" y1="-14" x2="110" y2="14"/>
+  </g>
+  <text x="600" y="332" text-anchor="end" font-family="'IBM Plex Mono', monospace" font-size="16" fill="#5A6472">Python · Spotify API</text>
+</svg>
