@@ -25,7 +25,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[C]{\footnotesize Last updated: July 24, 2026}
+\fancyfoot[C]{\footnotesize Last updated: September 3, 2026}
 
 \setlength{\parindent}{0pt}
 
@@ -81,24 +81,36 @@ A multi-tenant SaaS I am building single-handedly that lets firms collect, verif
 A mobile-first Progressive Web App that gives mortgage brokers a fast, secure workflow over their existing CRM (GoHighLevel). I built the first version (an installable PWA with a lightweight Node backend, PostgreSQL storage, scrypt-hashed session authentication, role-based admin/broker access and web-push notifications) and now lead its ongoing development alongside a second developer.
 
 \vspace{6pt}
-\project{NEA Game Project}{January 2023 -- February 2024}\\
-I created a 2D game for my A-level Computer Science project which involved using object-oriented programming techniques as well as the game engine Godot. Everything, including character design, code, and level design, I did by myself using the specified game engine as well as Aseprite to create pixelated sprites.
+\project{Lead-Integration Bridge}{2026}\\
+A resilient webhook-to-CRM service that ingests leads from a third-party provider: it verifies each signature, fetches the full record over an authenticated API and maps it into a client's CRM. Built stateless and idempotent so retried deliveries never duplicate, and validated against the live systems rather than the documentation, which caught several spec inaccuracies that would otherwise have shipped silently.
 
 \vspace{6pt}
-\project{AI Interface for Three}{June 2023}\\
-During my work experience for the tech company BlueBeck, I created a user interface for a customer-service AI bot. This was for the phone company Three, which hired BlueBeck to make and design the AI. I designed the interface to look like a standard SMS messaging conversation, and included a microphone option allowing users to speak their responses across various European languages.
+\project{Regulated Site Launch}{2026}\\
+Took an FCA-regulated brokerage's website live: hardened it with security headers (HSTS, CSP, clickjacking and referrer policies), self-hosted its assets for a genuinely tracker-free page, verified the required regulatory disclosures, and performed a zero-downtime DNS cutover over the client's live email.
 
 \vspace{6pt}
-\project{Translator for Hackathon}{November 2025}\\
-During Year 2 of my university course I attended two hackathons. In the first, my team and I created an application that, given speech or text from the user in one language, can translate it and give it back in another chosen language. We won runner-up for this project.
+\project{Legacy System Recovery}{2026}\\
+Recovered design knowledge from an 18-month-old .NET application due for decommission with no source repository, reconstructing its logic and schema history from build artefacts and migration history and surfacing proven production content. Delivered a prioritised backlog of which past decisions were worth carrying into the successor system.
 
 \vspace{6pt}
-\project{Memory Application for Hackathon}{November 2025}\\
-A memory music app where, given an image, the application takes the year the image was taken and then, on the user's local Spotify client, plays the most popular song of that year.
+\project{Company Website \& Compliance}{2026}\\
+Maintained and matured Go Automation's marketing site and legal suite (Privacy Policy, DPA, Terms and a new subprocessors page) and implemented cookie-consent management across every page so marketing tags load only after opt-in, with each update verified programmatically rather than by eye.
 
 \vspace{6pt}
-\project{Portfolio Website}{December 2025}\\
-My own website built with HTML, CSS and JavaScript. This is a personal project that I continue to work on and improve as I learn more skills; it currently has multiple pages, links and a download for this CV.
+\project{NEA Game Project}{2023--24}\\
+A 2D stealth game built solo in Godot (GDScript) for my A-level coursework, with all code, sprites and level design created from scratch.
+
+\vspace{6pt}
+\project{AI Interface for Three}{2023}\\
+On work experience at BlueBeck, I designed the UI for a customer-service AI chatbot for Three, styled as an SMS conversation with an added voice-input option.
+
+\vspace{6pt}
+\project{Hackathon Projects}{2025}\\
+Two university hackathon builds: a real-time speech and text translator (runner-up), and a nostalgia music app that plays the top song from the year a photo was taken via the Spotify API.
+
+\vspace{6pt}
+\project{Portfolio Website}{2025}\\
+A responsive, accessible portfolio site built from scratch with HTML, CSS and JavaScript (the home of this CV).
 
 % ---------- Technical Skills ----------
 \section*{Technical Skills}
@@ -106,7 +118,7 @@ My own website built with HTML, CSS and JavaScript. This is a personal project t
   Programming Languages & TypeScript, JavaScript, Python, SQL, C++, C, Java, Kotlin, GDScript, HTML/CSS \\
   Frameworks \& Tools & React, Next.js, Node.js, Tailwind CSS, Vite, Git \& GitHub \\
   Databases \& Infrastructure & PostgreSQL, Supabase, Vercel, Render \\
-  Concepts \& Practices & Row-Level Security, Progressive Web Apps, REST API integration, automated testing (Vitest), authentication \& session security \\
+  Concepts \& Practices & Row-Level Security, Progressive Web Apps, REST API \& webhook integration, web security (CSP, security headers), authentication \& session security, automated testing (Vitest), GDPR-conscious data handling \\
   Operating Systems & macOS, Microsoft Windows \\
   Misc. & Problem solver, team \& project management, enthusiastic about gaining new skills \\
 \end{tabular}

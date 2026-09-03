@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Regulated Site Launch">
+  <rect width="640" height="360" fill="#14181F"/>
+  <g stroke="#2A3038" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="90" x2="640" y2="90"/>
+    <line x1="0" y1="180" x2="640" y2="180"/>
+    <line x1="0" y1="270" x2="640" y2="270"/>
+  </g>
+  <text x="40" y="64" font-family="'IBM Plex Mono', monospace" font-size="20" fill="#4FA39A">site <tspan fill="#5A6472">~</tspan> <tspan fill="#E8A33D">$</tspan> <tspan fill="#C9D1D9">deploy --secure</tspan></text>
+  <!-- globe behind -->
+  <g transform="translate(250,200)" stroke="#2A3038" stroke-width="2" fill="none">
+    <circle cx="0" cy="0" r="70"/>
+    <ellipse cx="0" cy="0" rx="28" ry="70"/>
+    <line x1="-70" y1="0" x2="70" y2="0"/>
+    <line x1="-60" y1="-36" x2="60" y2="-36"/>
+    <line x1="-60" y1="36" x2="60" y2="36"/>
+  </g>
+  <!-- security shield -->
+  <g transform="translate(390,200)">
+    <path d="M0 -78 L64 -52 C64 -8 52 46 0 82 C-52 46 -64 -8 -64 -52 Z" fill="#232B36" stroke="#4FA39A" stroke-width="3"/>
+    <!-- padlock -->
+    <path d="M-16 -14 a16 16 0 0 1 32 0 v10" fill="none" stroke="#E8A33D" stroke-width="6"/>
+    <rect x="-22" y="-6" width="44" height="40" rx="7" fill="#E8A33D"/>
+    <circle cx="0" cy="12" r="5" fill="#14181F"/>
+    <rect x="-3" y="14" width="6" height="12" rx="3" fill="#14181F"/>
+  </g>
+  <text x="600" y="332" text-anchor="end" font-family="'IBM Plex Mono', monospace" font-size="16" fill="#5A6472">security headers · DNS cutover</text>
+</svg>

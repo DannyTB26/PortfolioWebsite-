@@ -102,6 +102,104 @@
       </template>
     </article>
 
+    <article class="project-card" data-tags="professional fullstack">
+      <div class="thumb"><img src="../images/leadIntegrationLogo.svg" alt="Lead-Integration Bridge"></div>
+      <div class="content">
+        <p class="card-title">Lead-Integration Bridge</p>
+        <p class="card-desc">A resilient webhook service that pipes leads from a third-party provider into a client's CRM, verified and idempotent.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">Node.js</span>
+          <span class="tag accent-2">Webhooks</span>
+          <span class="tag accent-2">REST API</span>
+        </div>
+      </div>
+      <template class="project-detail">
+        <p class="card-desc">A webhook-to-CRM integration service. The provider's webhook deliberately carries no personal data, just a reference, so the service verifies each signature, makes a second authenticated call to fetch the full enquiry, maps it, and writes the contact into the client's CRM.</p>
+        <p class="card-desc">It's stateless and idempotent: the provider retries failed deliveries and the CRM write updates the same record rather than creating a duplicate, giving durability with no database to maintain. I validated it against the live systems instead of the documentation, which surfaced three issues that would all have shipped silently, including a field whose casing differed from the spec and a signature spec missing a single delimiter character.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">Node.js</span>
+          <span class="tag accent-2">Webhooks</span>
+          <span class="tag accent-2">REST API</span>
+          <span class="tag accent-2">Idempotency</span>
+        </div>
+      </template>
+    </article>
+
+    <article class="project-card" data-tags="professional fullstack">
+      <div class="thumb"><img src="../images/regulatedSiteLogo.svg" alt="Regulated Site Launch"></div>
+      <div class="content">
+        <p class="card-title">Regulated Site Launch</p>
+        <p class="card-desc">Took an FCA-regulated brokerage's website live, hardened for a regulated firm, with a zero-downtime DNS cutover.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">DevOps</span>
+          <span class="tag accent-2">Security</span>
+          <span class="tag accent-2">DNS</span>
+        </div>
+      </div>
+      <template class="project-detail">
+        <p class="card-desc">Took an FCA-regulated mortgage brokerage's site from a single HTML file to live. I hardened it with security headers appropriate to a regulated financial firm (HSTS, a content security policy, clickjacking, referrer and permissions policies), added a sitemap and robots, and pinned the framework config so a hosting mis-detection couldn't break the build.</p>
+        <p class="card-desc">In review I found the page claimed it used no tracking yet loaded its font from Google's CDN, so I self-hosted the font for a genuinely tracker-free page. The riskiest part was the DNS cutover: the domain ran the client's live email, so I changed only the web records, left the mail records untouched, and verified email before and after. I also confirmed the required regulatory disclosures were present and correct.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">DevOps</span>
+          <span class="tag accent-2">Security Headers</span>
+          <span class="tag accent-2">DNS</span>
+          <span class="tag accent-2">Compliance</span>
+        </div>
+      </template>
+    </article>
+
+    <article class="project-card" data-tags="professional fullstack">
+      <div class="thumb"><img src="../images/legacyRecoveryLogo.svg" alt="Legacy System Recovery"></div>
+      <div class="content">
+        <p class="card-title">Legacy System Recovery</p>
+        <p class="card-desc">Software archaeology: recovering design knowledge from an 18-month-old .NET app with no source repo, before it was switched off.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">.NET</span>
+          <span class="tag accent-2">Reverse Engineering</span>
+        </div>
+      </div>
+      <template class="project-detail">
+        <p class="card-desc">An 18-month-old production .NET application was due to be switched off, with no source repository available. The question was what was worth carrying into its successor. Razor views and client JavaScript ship uncompiled, so the original signing implementation came back intact, comments and all; compiled assemblies still carried the controllers, interfaces and view models; and the EF Core migration history read as a dated ledger of what was built and in what order.</p>
+        <p class="card-desc">The find nobody expected: 18 months of message copy assumed lost was sitting in our own message table, reducible to 18 de-identified templates that provably worked. I also caught an internal audit that had compared the new system against the wrong predecessor, an error that was quietly steering roadmap decisions. The output was twelve prioritised backlog cards, each with the original implementation detail and the production usage evidence.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">.NET</span>
+          <span class="tag accent-2">Reverse Engineering</span>
+          <span class="tag accent-2">EF Core</span>
+        </div>
+      </template>
+    </article>
+
+    <article class="project-card" data-tags="professional fullstack">
+      <div class="thumb"><img src="../images/complianceLogo.svg" alt="Company Website and Compliance"></div>
+      <div class="content">
+        <p class="card-title">Company Website &amp; Compliance</p>
+        <p class="card-desc">Maturing Go Automation's marketing site and legal suite, with cookie consent and programmatic verification.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">GDPR</span>
+          <span class="tag accent-2">Frontend</span>
+          <span class="tag accent-2">Compliance</span>
+        </div>
+      </div>
+      <template class="project-detail">
+        <p class="card-desc">Ongoing work on Go Automation's marketing site and its legal suite. I genericised the legal documents from broker-specific to any professional-services client, added a new subprocessors transparency page, and implemented cookie-consent management across every page so the Meta Pixel and LinkedIn Insight Tag load only after a visitor opts in, with the choice persisted and reopenable.</p>
+        <p class="card-desc">Conversion tracking is gated too, queuing events before consent and flushing them on acceptance rather than losing them. Every document update was verified programmatically rather than by eye, including link-resolution checks across all 94 internal links and consent behaviour tested on the live domain.</p>
+        <div class="tags">
+          <span class="tag accent">#professional</span>
+          <span class="tag accent-2">GDPR</span>
+          <span class="tag accent-2">Cookie Consent</span>
+          <span class="tag accent-2">Frontend</span>
+          <span class="tag accent-2">Verification</span>
+        </div>
+      </template>
+    </article>
+
     <article class="project-card" data-tags="fullstack">
       <div class="thumb"><img src="../images/websiteLogo.svg" alt="Portfolio website"></div>
       <div class="content">

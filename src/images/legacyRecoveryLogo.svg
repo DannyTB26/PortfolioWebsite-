@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Legacy System Recovery">
+  <rect width="640" height="360" fill="#14181F"/>
+  <g stroke="#2A3038" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="90" x2="640" y2="90"/>
+    <line x1="0" y1="180" x2="640" y2="180"/>
+    <line x1="0" y1="270" x2="640" y2="270"/>
+  </g>
+  <text x="40" y="64" font-family="'IBM Plex Mono', monospace" font-size="20" fill="#4FA39A">recover <tspan fill="#5A6472">~</tspan> <tspan fill="#E8A33D">$</tspan> <tspan fill="#C9D1D9">dig --artifacts</tspan></text>
+  <!-- legacy database stack -->
+  <g transform="translate(210,120)">
+    <g fill="#232B36" stroke="#2A3038" stroke-width="2">
+      <ellipse cx="0" cy="18" rx="70" ry="20"/>
+      <path d="M-70 18 v46 a70 20 0 0 0 140 0 v-46" />
+      <ellipse cx="0" cy="64" rx="70" ry="20"/>
+      <path d="M-70 64 v46 a70 20 0 0 0 140 0 v-46" />
+      <ellipse cx="0" cy="110" rx="70" ry="20"/>
+    </g>
+    <!-- recovered artifact band -->
+    <path d="M-70 18 v46 a70 20 0 0 0 140 0 v-46 a70 20 0 0 1 -140 0" fill="none" stroke="#E8A33D" stroke-width="2.5"/>
+    <ellipse cx="0" cy="18" rx="70" ry="20" fill="none" stroke="#E8A33D" stroke-width="2.5"/>
+  </g>
+  <!-- magnifying glass -->
+  <g transform="translate(370,215)">
+    <circle cx="0" cy="0" r="46" fill="#14181F" fill-opacity="0.5" stroke="#4FA39A" stroke-width="7"/>
+    <line x1="33" y1="33" x2="74" y2="74" stroke="#4FA39A" stroke-width="12" stroke-linecap="round"/>
+    <text x="0" y="9" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="30" fill="#E8A33D">&lt;/&gt;</text>
+  </g>
+  <text x="600" y="332" text-anchor="end" font-family="'IBM Plex Mono', monospace" font-size="16" fill="#5A6472">18-month recovery · no repo</text>
+</svg>
