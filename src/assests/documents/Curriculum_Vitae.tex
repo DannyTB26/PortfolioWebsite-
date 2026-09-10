@@ -2,16 +2,19 @@
 
 % ---------- Packages ----------
 \usepackage[margin=2cm]{geometry}
+\usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{fontawesome}
 \usepackage{array}
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{1F3A5F}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 
 % ---------- Section styling (small-caps + rule) ----------
-\titleformat{\section}{\Large\scshape}{}{0em}{}[\vspace{2pt}\titlerule]
+\titleformat{\section}{\Large\bfseries\scshape\color{accent}}{}{0em}{}[\vspace{2pt}{\color{accent}\titlerule[1.1pt]}]
 \titlespacing{\section}{0pt}{14pt}{8pt}
 
 % ---------- List styling ----------
@@ -33,7 +36,7 @@
 
 % ---------- Header ----------
 \begin{center}
-  {\Huge Daniel Baylan}\\[8pt]
+  {\Huge\color{accent} Daniel Baylan}\\[8pt]
   \faGithub~\href{https://github.com/DannyTB26}{DannyTB26} \quad\textbar\quad
   \faLinkedin~\href{https://www.linkedin.com/in/daniel-baylan-17943032a/}{Daniel Baylan} \quad\textbar\quad
   \faEnvelope~\href{mailto:DanielJBaylan@gmail.com}{DanielJBaylan@gmail.com} \quad\textbar\quad
@@ -44,7 +47,7 @@
 \section*{Work Experience}
 \entry{Head Developer, Go Automation}{June 2026 -- Present}
 \begin{itemize}
-  \item I was the lead developer building a document collection system. An AI-powered, multi-tenant document-collection system, built end-to-end (utilising Next.js, React, TypeScript, Supabase/PostgreSQL).
+  \item I was the lead developer building a document collection system. An AI-powered, multi-tenant document-collection system, built end-to-end (utilising Next.js, React, TypeScript, Supabase\slash PostgreSQL).
   \item I was in charge of the full stack, including the database schema, row-level-security design, backend, front end, and an AI-driven document-verification pipeline, with an adversarial code-review gate before every production release.
   \item I also managed two other developers: one delivering the Mortgage Bridge CRM, having built its first version myself before onboarding them, and another working alongside me on the Document Collection System.
 \end{itemize}
